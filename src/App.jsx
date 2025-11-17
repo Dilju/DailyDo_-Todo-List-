@@ -75,7 +75,7 @@ function App() {
           <input
             type="text"
             placeholder="Add your task..."
-            className="flex-1 border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400"
+            className="flex-1 border border-blue-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400"
             value={task}
             onChange={(e) => setTask(e.target.value)}
           />
@@ -88,8 +88,8 @@ function App() {
 
         {/* Summary */}
         <div className="flex justify-between items-center mb-4 text-gray-600">
-          <span>{leftCount} Left</span>
-          <span>{completedCount} Completed</span>
+          <span className="bg-gray-100 px-3 py-2 rounded-lg shadow-lg">{leftCount} Left</span>
+          <span className="bg-gray-100 px-3 py-2 rounded-lg shadow-lg">{completedCount} Completed</span>
           <button
             className="text-red-600 hover:underline"
             onClick={clearCompleted}
